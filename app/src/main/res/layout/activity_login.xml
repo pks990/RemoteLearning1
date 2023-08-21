@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back"
+        android:src="@drawable/back"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:layout_marginTop="338dp"
+        android:layout_marginLeft="35dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:id="@+id/Eemail"
+        android:textColor="@color/white"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/rounded_edittext_bg"
+        android:hint="Enter your email"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:layout_marginTop="418dp"
+        android:layout_marginLeft="35dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:id="@+id/Epassword"
+        android:layout_below="@+id/Eemail"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/rounded_edittext_bg"
+        android:hint="Enter your password"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/white"/>
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:id="@+id/Login"
+        android:layout_below="@+id/Epassword"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/loginGo"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:background="@drawable/rounded_button_bg"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/FOG"
+        android:text="@string/forgot_password"
+        android:textAllCaps="false"
+        android:layout_below="@id/Login"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="12dp"
+        android:textSize="18sp"
+        android:textColor="#E91E63"
+        android:layout_marginStart="65dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUp"
+        android:text="@string/signup"
+        android:textAllCaps="false"
+        android:layout_below="@id/Login"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:textColor="#E91E63"
+        android:layout_marginStart="65dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
